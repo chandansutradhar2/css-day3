@@ -1,0 +1,18 @@
+/* use the variables */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-header {
+	background-color: #a359e9;
+}
+
+.menu-left {
+	background-color: #a359e9;
+}
+
+.menu-right {
+	background-color: #878f99;
+}
+
+/*# sourceMappingURL=theme.css.map */

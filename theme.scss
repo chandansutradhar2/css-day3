@@ -1,0 +1,16 @@
+$primary: #a359e9;
+$secondary: #f0f340;
+$accent: #878f99;
+
+/* use the variables */
+.main-header {
+	background-color: $primary;
+}
+
+.menu-left {
+	background-color: $primary;
+}
+
+.menu-right {
+	background-color: $accent;
+}

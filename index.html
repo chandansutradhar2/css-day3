@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online University</title>
+    <!-- <script src="./index.js"></script> -->
     <link rel="stylesheet" href="./styles.css">
-
+    <link rel="stylesheet" href="theme.css">
 </head>
 
 <body>
+
     <section class="header">
-        <nav id="nav-head">
-            <a href="index.html"><img src="assets/images/logo.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-close" onclick="hideMenu()"></i>
+        <nav class="nav-head">
+            <a href="index.html"><img style="width: 140px;" src="assets/images/logo.png"></a>
+            <div class="nav-links" id="menu">
+                <i id="hide-icon" class="fa fa-close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -24,7 +26,7 @@
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i id="show-icon" class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -32,9 +34,34 @@
             <p>Making website is now one of the easiest thing in the world. You just need to learn HTML,
                 CSS,<br>Javascript
                 and you are good to go.</p>
-            <a href="contact.html" class="hero-btn">Visit Us to Know More</a>
+            <a href="contact.html" class="hero-btn" id="hero-btn">Visit Us to Know More</a>
         </div>
+
+
     </section>
+
 </body>
 
+
+
 </html>
+
+<script>
+
+    const user = {
+        fname: 'chandan',
+        lname: 'naresh',
+        mobile: '8080811145',
+        email: 'someemail@gmail.com'
+    }
+    var navLinks = document.getElementById("menu");
+    function showMenu() {
+        navLinks.style.right = "0";
+        console.log(user)
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+</script>
