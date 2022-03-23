@@ -1,8 +1,18 @@
 @import url("ttps://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap");
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 * {
 	margin: 0;
 	padding: 0;
 	font-family: "Poppins", sans-serif;
-	background-color: red;
+}
+
+.header {
+	border-bottom: 2px;
+	border-style: dashed;
+}
+
+#nav-head {
+	border-bottom: 12px;
+	border-style: dashed;
 }

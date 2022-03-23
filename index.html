@@ -7,16 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online University</title>
     <link rel="stylesheet" href="./styles.css">
-    <style>
-        * {
-            margin: 2em;
-            background-color: aquamarine !important;
-        }
-    </style>
+
 </head>
 
-<body style="background-color: blue !important; width: 100vw; height: 100vh;">
-    <h1 style="font-size:60px">Welcome to Online University</h1>
+<body>
+    <section class="header">
+        <nav id="nav-head">
+            <a href="index.html"><img src="assets/images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>World's Biggest University</h1>
+            <p>Making website is now one of the easiest thing in the world. You just need to learn HTML,
+                CSS,<br>Javascript
+                and you are good to go.</p>
+            <a href="contact.html" class="hero-btn">Visit Us to Know More</a>
+        </div>
+    </section>
 </body>
 
 </html>
